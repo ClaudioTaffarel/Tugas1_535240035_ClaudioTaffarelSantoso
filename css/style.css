@@ -1,0 +1,159 @@
+/* ROOTS */
+
+:root{
+    --normz-sagegreen: #88b58f;
+    --light-sagegreen: #e9f0ea;
+    --dark-greyishh: #222;
+    --whiteezz: #fff;
+}
+
+/* ============ FONTSS ============ */
+
+.pacifico-regz {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-regz {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-semiboldz {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-boldz {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--light-sagegreen);
+    padding-left: 30rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--dark-greyishh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 3rem;
+    width: 30rem;
+    text-align: center;
+}
+
+header .logo{
+    text-transform: uppercase;
+    color: var(--whiteezz);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo span{
+    text-transform: uppercase;
+    color: var(--normz-sagegreen);
+}
+
+header .navbarzz a{
+    display: block;
+    font-size: 2rem;
+    color: var(--whiteezz);
+    margin: 2rem 0;
+}
+
+header .navbarzz a:hover{
+    letter-spacing: .2rem;
+    color: var(--normz-sagegreen);
+}
+
+header .followzz a{
+    font-size: 2.5rem;
+    color: var(--whiteezz);
+    margin: 0.7rem;
+}
+
+header .followzz a:hover{
+    color: var(--normz-sagegreen);
+}
+
+#menu-barz{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background: var(--normz-sagegreen);
+    color: var(--whiteezz);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* media queries */
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        padding: 0px;
+    }
+
+    #menu-barz{
+        display: initial;
+    }
+
+    header{
+        left: -120%;
+    }
+
+    header.active{
+        left: 0%;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        left: 100%;
+    }
+}
+
+
