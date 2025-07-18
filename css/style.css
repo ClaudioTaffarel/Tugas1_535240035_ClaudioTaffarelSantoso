@@ -1,9 +1,11 @@
-/* ROOTS */
+/* ============ COLOR ROOTS =========== */
 
 :root{
     --normz-sagegreen: #88b58f;
     --light-sagegreen: #e9f0ea;
+    --dark-sagegreen: #649167;
     --dark-greyishh: #222;
+    --light-greyish: #666;
     --whiteezz: #fff;
 }
 
@@ -12,24 +14,6 @@
 .pacifico-regz {
   font-family: "Pacifico", cursive;
   font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat-regz {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat-semiboldz {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.montserrat-boldz {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
   font-style: normal;
 }
 
@@ -45,6 +29,8 @@
     transition: all .2s linear;
     line-height: 1.5;
 }
+ 
+/* ============ CONTENTS ============ */
 
 html{
     font-size: 62.5%;
@@ -56,6 +42,28 @@ body{
     background: var(--light-sagegreen);
     padding-left: 30rem;
 }
+
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--normz-sagegreen);
+    color: var(--whiteezz);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--dark-greyishh);
+    letter-spacing: 0.2rem;
+}
+
+/* ============ HEADER ============ */
 
 header{
     position: fixed;
@@ -121,7 +129,60 @@ header .followzz a:hover{
     display: none;
 }
 
-/* media queries */
+
+/* ============ HOME ============ */
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .imagez{
+    flex: 1 1 40rem;
+}
+
+.home .imagez img{
+    width: 100%;
+}
+
+.home .contentz{
+    flex: 1 1 40rem;
+}
+
+.home .contentz .introw{
+    font-size: 2rem;
+    color: var(--dark-sagegreen);
+}
+
+.home .contentz h3{
+    font-size: 3.4rem;
+    color: var(--dark-greyishh);
+    text-transform: uppercase;
+}
+
+.home .contentz h3 span{
+    color: var(--dark-sagegreen);
+    text-transform: uppercase;
+}
+
+.home .contentz .infoz{
+    font-size: 2.5rem;
+    color: var(--dark-greyishh);
+    padding: 0.5rem 0;
+}
+
+.home .contentz .texts{
+    font-size: 1.7rem;
+    color: var(--light-greyish);
+    padding: 0.5rem 0;
+}
+
+
+
+
+/* ============ LAYOUT SIZING ============ */
+
 @media (max-width: 991px){
     html{
         font-size: 55%;
@@ -155,5 +216,6 @@ header .followzz a:hover{
         left: 100%;
     }
 }
+
 
 
