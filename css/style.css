@@ -4,6 +4,7 @@
     --normz-sagegreen: #88b58f;
     --light-sagegreen: #e9f0ea;
     --dark-sagegreen: #649167;
+    --dark2-sagegreen: #4d704f;
     --dark-greyishh: #222;
     --light-greyish: #666;
     --whiteezz: #fff;
@@ -48,11 +49,23 @@ section{
     min-height: 100vh;
 }
 
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: var(--dark-greyishh);
+    text-transform: uppercase;
+}
+
+.heading span{
+    color: var(--normz-sagegreen);
+    text-transform: uppercase;
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    background: var(--normz-sagegreen);
+    background: var(--dark-sagegreen);
     color: var(--whiteezz);
     cursor: pointer;
     font-size: 1.7rem;
@@ -131,6 +144,7 @@ header .followzz a:hover{
 
 
 /* ============ HOME ============ */
+
 .home{
     display: flex;
     align-items: center;
@@ -178,6 +192,133 @@ header .followzz a:hover{
     padding: 0.5rem 0;
 }
 
+/* ============ ABOUT ============ */
+
+.about .firstRow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.about .firstRow .imagez{
+    flex: 1 1 25rem;
+}
+
+.about .firstRow .imagez img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.about .firstRow .contentz{
+    flex: 1 1 50rem;
+}
+
+.about .firstRow .contentz h3{
+    color: var(--dark-greyishh);
+    font-size: 3.5rem;
+}
+
+.about .firstRow .contentz p{
+    color: var(--light-greyish);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .firstRow .contentz .box-containerz{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .firstRow .contentz .box-containerz .boxx{
+    flex: 1 1 20rem;
+}
+
+.about .firstRow .contentz .box-containerz .boxx span{
+    color: var(--dark2-sagegreen);
+}
+
+
+/* skills */
+/* ntar */
+
+
+
+
+/* ============ EXPERIENCES ============ */
+
+.experiences .box-containerz{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experiences .box-containerz .boxx{
+    position: relative;
+    flex: 1 1 45%;
+    border-left: 0.2rem solid var(--normz-sagegreen);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experiences .box-containerz .boxx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--normz-sagegreen);
+}
+
+.experiences .box-containerz .boxx .contentz{
+    background: var(--whiteezz);
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+}
+
+.experiences .box-containerz .boxx .contentz span{
+    color: var(--whiteezz);
+    font-size: 1.7rem;
+    background-color: var(--normz-sagegreen);
+    border-radius: 50rem;
+    padding: 0.4rem 1rem;
+}
+
+.experiences .box-containerz .boxx .contentz h3{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    color: var(--dark-greyishh);
+}
+
+.experiences .box-containerz .boxx .contentz p{
+    font-size: 1.5rem;
+    color: var(--light-greyishh);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -214,6 +355,10 @@ header .followzz a:hover{
 
     header{
         left: 100%;
+    }
+
+    .experiences .box-containerz .boxx{
+        padding-right: 0;
     }
 }
 
