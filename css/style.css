@@ -3,6 +3,7 @@
 :root{
     --normz-sagegreen: #88b58f;
     --light-sagegreen: #e9f0ea;
+    --light2-sagegreen: #a1c29f;
     --dark-sagegreen: #649167;
     --dark2-sagegreen: #4d704f;
     --dark-greyishh: #222;
@@ -303,14 +304,71 @@ header .followzz a:hover{
 }
 
 
+/* ============ PROJECTS ============ */
 
+.projects .box-containerz{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.projects .box-containerz .boxx{
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border: 1rem solid var(--whiteezz);
+    background: var(--light2-sagegreen);
+    border-radius: 0.5rem;
+}
 
+.projects .box-containerz .boxx img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1; 
+}
 
+.projects .box-containerz .boxx:hover img{
+    height: 80%;
+    width: 80%;
+}
 
+.projects .box-containerz .boxx h3{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: var(--dark-greyishh);
+    text-transform: uppercase;
+}
 
+.projects .box-containerz .boxx .iconz{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
+.projects .box-containerz .boxx .iconz a{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    background: var(--whiteezz);
+    color: var(--dark-greyishh);
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
+.projects .box-containerz .boxx .iconz a:hover{
+    background: var(--dark-sagegreen);
+    color: var(--whiteezz);
+}
 
 
 
