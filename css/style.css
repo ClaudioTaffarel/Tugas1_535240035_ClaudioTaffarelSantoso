@@ -120,14 +120,14 @@ header{
     text-align: center;
 }
 
-header .logo{
+header .main-headz{
     text-transform: uppercase;
     color: var(--whiteezz);
     font-size: 3rem;
     font-weight: bolder;
 }
 
-header .logo span{
+header .main-headz span{
     text-transform: uppercase;
     color: var(--dark-sagegreen);
 }
@@ -232,8 +232,8 @@ header .followzz a:hover{
 }
 
 .about .firstRow .imagez img{
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
     object-fit: cover;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
@@ -248,9 +248,11 @@ header .followzz a:hover{
 }
 
 .about .firstRow .contentz p{
-    color: var(--light-greyish);
+    color: var(--dark-greyish);
     font-size: 1.5rem;
     padding: 0.5rem 0;
+    text-align: justify;
+    text-transform: none;
 }
 
 .about .firstRow .contentz .box-containerz{
@@ -323,6 +325,31 @@ header .followzz a:hover{
     color: var(--light-greyishh);
 }
 
+.languagez{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.languagez-icon{
+    display: flex;
+    align-items: center;
+    background: var(--whiteezz);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.languagez-icon i{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.languagez-icon span{
+    font-size: 1.5rem;
+    color: var(--dark-greyishh);
+}
+
 
 /* ============ PROJECTS ============ */
 
@@ -390,6 +417,14 @@ header .followzz a:hover{
     color: var(--whiteezz);
 }
 
+.project-detail {
+    padding: 2rem;
+    background: var(--light-sagegreen);
+}
+
+.project-detail .btn {
+    margin-bottom: 1rem;
+}
 
 /* ============ CONTACTS ============ */
 
