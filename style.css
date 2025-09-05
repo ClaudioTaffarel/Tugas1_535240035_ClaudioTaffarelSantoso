@@ -88,20 +88,6 @@ section{
 }
 
 
-/* ============ FADE ANIMATIONZNZZN ============ */
-
-.fadezz {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
-
-.fadezz.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 /* ============ SIDE HEADER ============ */
 
 header{
@@ -154,20 +140,6 @@ header .followzz a:hover{
     color: var(--normz-sagegreen);
 }
 
-#menu-barz{
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 10000;
-    background: var(--normz-sagegreen);
-    color: var(--whiteezz);
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
-    font-size: 3rem;
-    cursor: pointer;
-    display: none;
-}
-
 
 /* ============ HOME ============ */
 
@@ -217,6 +189,7 @@ header .followzz a:hover{
     color: var(--light-greyish);
     padding: 0.5rem 0;
 }
+
 
 /* ============ ABOUT ============ */
 
@@ -409,26 +382,53 @@ header .followzz a:hover{
 /* ============ LAYOUT SIZING ============ */
 
 @media (max-width: 991px){
-    html{
-        font-size: 55%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
-
     body{
-        padding: 0px;
+        padding-left: 0;
     }
 
-    #menu-barz{
-        display: initial;
+    header {
+        display: none;
     }
 
-    header{
-        left: -120%;
+    .home {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header.active{
-        left: 0%;
+    .home .contentz, .home .imagez {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about .firstRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .firstRow .imagez, .about .firstRow .contentz {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .experiences .box-containerz .boxx {
+        flex: 1 1 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact .rowz {
+        flex-direction: column;
+    }
+
+    .contact .icons-containerz, .contact .rowz .mapz {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .about .firstRow .imagez img {
+        display: none;
     }
 }
 
@@ -444,7 +444,21 @@ header .followzz a:hover{
     .experiences .box-containerz .boxx{
         padding-right: 0;
     }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .heading2 {
+        font-size: 1.8rem;
+    }
+
+    .home .contentz h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .contentz .infoz {
+        font-size: 1.8rem;
+    }
 }
-
-
 
