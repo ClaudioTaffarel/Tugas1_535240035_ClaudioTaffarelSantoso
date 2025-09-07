@@ -193,34 +193,34 @@ header .followzz a:hover{
 
 /* ============ ABOUT ============ */
 
-.about .firstRow{
+.about .aboutContentzz{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     padding-bottom: 2rem;
 }
 
-.about .firstRow .imagez{
+.about .aboutContentzz .imagez{
     flex: 1 1 25rem;
 }
 
-.about .firstRow .imagez img{
+.about .aboutContentzz .imagez img{
     height: 95%;
     width: 95%;
     object-fit: cover;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 
-.about .firstRow .contentz{
+.about .aboutContentzz .contentz{
     flex: 1 1 50rem;
 }
 
-.about .firstRow .contentz h3{
+.about .aboutContentzz .contentz h3{
     color: var(--dark-greyishh);
     font-size: 3.5rem;
 }
 
-.about .firstRow .contentz p{
+.about .aboutContentzz .contentz p{
     color: var(--dark-greyish);
     font-size: 1.5rem;
     padding: 0.5rem 0;
@@ -228,23 +228,43 @@ header .followzz a:hover{
     text-transform: none;
 }
 
-.about .firstRow .contentz .box-containerz{
+.about .aboutContentzz .contentz span{
+    color: var(--dark2-sagegreen);
+    font-weight: 700;
+}
+
+.about .aboutContentzz .contentz .box-containerz{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0.5rem 0;
 }
 
-.about .firstRow .contentz .box-containerz .boxx{
+.about .aboutContentzz .contentz .box-containerz .boxx{
     flex: 1 1 20rem;
 }
 
-.about .firstRow .contentz .box-containerz .boxx span{
+.about .aboutContentzz .contentz .box-containerz .boxx span{
     color: var(--dark2-sagegreen);
     font-weight: 700;
 }
 
-.about .firstRow .contentz .box-containerz .boxx p{
+.about .aboutContentzz .contentz .box-containerz .boxx p{
+    text-transform: none;
+}
+
+.about .aboutContentzz .contentz .educationn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .aboutContentzz .contentz .educationn .boxx {
+    flex: 1 1 20rem;
+}
+
+.about .aboutContentzz .contentz .educationn .boxx p {
     text-transform: none;
 }
 
@@ -300,31 +320,6 @@ header .followzz a:hover{
 .experiences .box-containerz .boxx .contentz p{
     font-size: 1.5rem;
     color: var(--light-greyishh);
-}
-
-.languagez{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.languagez-icon{
-    display: flex;
-    align-items: center;
-    background: var(--whiteezz);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.languagez-icon i{
-    font-size: 2rem;
-    margin-right: 0.5rem;
-}
-
-.languagez-icon span{
-    font-size: 1.5rem;
-    color: var(--dark-greyishh);
 }
 
 
@@ -400,16 +395,20 @@ header .followzz a:hover{
         max-width: 100%;
     }
 
-    .about .firstRow {
+    .about .aboutContentzz {
         flex-direction: column;
         align-items: center;
     }
 
-    .about .firstRow .imagez, .about .firstRow .contentz {
+    .about .aboutContentzz .imagez, .about .aboutContentzz .contentz {
         flex: 1 1 100%;
         max-width: 100%;
     }
 
+    .about .aboutContentzz .imagez img {
+        display: none;
+    }
+    
     .experiences .box-containerz .boxx {
         flex: 1 1 100%;
         padding-left: 1rem;
@@ -426,39 +425,4 @@ header .followzz a:hover{
         max-width: 100%;
         margin-bottom: 1.5rem;
     }
-
-    .about .firstRow .imagez img {
-        display: none;
-    }
 }
-
-@media (max-width: 450px){
-    html{
-        font-size: 50%;
-    }
-
-    header{
-        left: 100%;
-    }
-
-    .experiences .box-containerz .boxx{
-        padding-right: 0;
-    }
-
-    .heading {
-        font-size: 3rem;
-    }
-
-    .heading2 {
-        font-size: 1.8rem;
-    }
-
-    .home .contentz h3 {
-        font-size: 2.5rem;
-    }
-
-    .home .contentz .infoz {
-        font-size: 1.8rem;
-    }
-}
-
